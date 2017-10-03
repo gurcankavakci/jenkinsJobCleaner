@@ -13,7 +13,8 @@ import hudson.FilePath
 
 // Initialize debugMode parameter to TRUE if not given as script parameter
 debugMode = true;
-def limit = limitDay.toInteger()
+//def limit = limitDay.toInteger()//in jenkins enter groovy parameter as: limitDay=30
+def limit = 30 //direct usage
 
 if (debugMode == true) {
     println "** Execute a debugMode - no files will ever be deleted **";
